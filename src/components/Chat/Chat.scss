@@ -1,0 +1,229 @@
+ 
+@import "../../variable.scss";
+
+
+.chat-grid {
+    position: relative;
+    flex-grow: 1;
+    background: #fff;
+    @media #{$smallscreens} {
+        height: calc(100vh - 64px);
+      }
+}
+
+ 
+
+.chat-right {
+    margin: 20px !important;
+    justify-content: flex-end !important;
+    display: flex;
+    .chat-block {
+        background-color: #F9F9F9;
+        color: #324552;
+    }
+    .MuiListItem-gutters {
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+    .MuiListItem-button:hover, .MuiListItem-button:focus {
+        background-color: #FFFFFF;
+    }
+    .MuiListItemText-root {
+        margin-left: 10px;
+    }
+}
+
+.chat-left {
+    justify-content: flex-start !important;
+    display: flex;
+    margin: 20px !important;
+    .chat-block {
+        background-color: #0078CE;
+        color: #FFFFFF;
+    }
+    .MuiListItem-gutters {
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+    .MuiListItem-button:hover, .MuiListItem-button:focus {
+        background-color: #FFFFFF;
+    }
+    .MuiButtonBase-root {
+        cursor: default;
+    }
+    .MuiListItemText-root {
+        margin-left: 10px;
+    }
+}
+
+.timeStamp {
+    color: #7D92A1;
+//styleName: Buttons & Labels / XSmall;
+font-family: Work Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: right;
+
+}
+
+
+
+.userName {
+    font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+.segment-text {
+    .MuiTypography-body1 {
+font-family: Work Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+    }
+
+}
+ 
+
+
+.bottomChatSectionHolder{
+   position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+
+    .bottomChatSectionInner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 98%;
+
+        
+        .textChatSection{
+            width: 100%;
+            border: 0px;
+            background: #fff;
+            padding: 5px 15px 5px;
+            max-width: 95%;
+            resize: none;
+            font-size: 1rem;
+            @media #{$smallscreens} {
+                padding: 5px 5px 5px;
+              }
+
+              &:focus{
+                   
+              }
+              &:focus-visible{
+                outline-color: #CCC;
+            }
+         }
+
+         .HelperTextChat {
+            text-align: right;
+            padding: 1px 5px;
+            background: #fff;
+            font-size: 14px;
+            display: block;
+            @media #{$ipad} {
+                font-size: 9px;
+              }
+
+            @media #{$smallscreens} {
+                font-size: 9px;
+              }
+          }
+    }
+
+    .MuiButtonBase-root{
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .svg{
+        fill:#000000;
+    }
+     
+}
+
+
+
+
+.chatBoxHolder{
+
+    align-items: flex-end;
+    display: block;
+    flex-direction: column;
+    padding: 10px 15px 0px;
+    background: #fff;    
+    justify-content: flex-end;
+    padding-top: 70px;
+    overflow: auto;
+    height: calc(100vh - 140px);
+    .chatSection{
+        width: 100%;
+        
+        .chatBox{
+            width: 100%;
+            max-width: 310px;
+            .messageInfoBox{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            .messageInfoUser{
+                display: flex;
+                justify-content: space-between;
+                font-size: 13px;
+            }
+        }
+        
+
+            .messageBoxBlue{
+                background-color: #0078CE;
+                padding:16px 16px;
+                color:#fff;
+                margin: 10px 0px 10px;
+                
+            }
+
+            .tickGreen {
+                color: #116019;
+                font-size: 20px;  
+            }
+
+        }
+
+    }
+
+    .chatSection.right{
+        justify-content: flex-end;
+        .chatBox{
+            margin-right: 0px;
+            margin-left: auto;
+            .messageBoxBlue{
+                background-color: #f8f8f8;
+                color:#000;
+                
+            }
+        }
+    }
+
+
+    
+    
+}

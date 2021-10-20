@@ -1,0 +1,111 @@
+@import "../../variable.scss";
+
+
+.paperBlock {
+  padding: 8;
+  border: "1px solid black";
+  margin: 20;
+
+}
+
+.rightSidebarHolder {  
+  .user-block {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+}
+
+ 
+.italic-text {
+  font-style: italic;
+}
+
+.userIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .MuiAvatar-root {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 96px;
+    width: 96px;
+  }
+}
+
+.profileCard {
+  position: relative;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  .userAvtarHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -62px;
+
+    .profileCardImage {
+      width: 80px;
+      height: 80px;
+      margin: 0px 0px;
+    }
+
+    .arrowIcon {
+      background-color: transparent;
+      border-width: 0px;
+      position: relative;
+      min-width: 48px;
+      height: 48px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        color: #AAB2B8;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+     
+  }
+
+  .profileCardInner {
+    padding: 15px;
+    max-width: 87%;
+    margin: auto;
+    border-radius: 10px;
+
+    .profileCardText {
+      margin-top: 10px;
+      font-size: 15px;
+      display: block;
+
+      svg {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.contactCrollPanel {
+  padding: 5px;
+  text-align: center;
+  color: #000;
+  height: calc(100vh - 340px);
+  overflow: auto;
+  border-radius: 10px;
+  background: #EAF0FF;
+  @media #{$ipad} {
+    height: calc(100vh - 380px);
+  }
+}

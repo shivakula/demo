@@ -1,0 +1,32 @@
+.MuiGrid-grid-xs-1 {
+  flex-grow: 0;
+  max-width: 3.333333%;
+  flex-basis: 3.333333% !important;
+}
+
+.panel-container {
+  //  flex-direction: column;
+  position: relative;
+  padding-top: 10px;
+  //padding-bottom: 10px;
+  svg {
+    margin: 5px auto;
+    height: 33px;
+    width: 34px;
+    left: 24px;
+    top: 253px;
+    border-radius: 0px;
+  }
+
+  div {
+    text-align: center;
+  }
+}
+.panel-icon {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.smile-icon {
+  color: #7d92a1;
+}
